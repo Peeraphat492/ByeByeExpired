@@ -38,7 +38,7 @@ const ProfileScreen = ({ navigation }) => {
         style={styles.signOutButton}
         onPress={() => navigation.navigate("Login")}
       >
-        <Text style={styles.buttonText}>Sign Out</Text>
+        <Text style={styles.buttonText}>Log Out</Text>
       </TouchableOpacity>
       
     </ImageBackground>
@@ -66,10 +66,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 15,
     borderRadius: 10,
-    shadowColor: "#000",
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.3,
-    shadowRadius: 4,
+    
   },
   myProfileText: {
     fontSize: 16,
@@ -115,12 +112,12 @@ const styles = StyleSheet.create({
   },
   signOutButton: {
     position: "absolute",
-    bottom: 20,
-    right: 20,
+    bottom: 35,
+    right: 34,
     backgroundColor: "#ffe9f2",
     paddingVertical: 10,
     paddingHorizontal: 20,
-    borderRadius: 15,
+    borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
@@ -128,7 +125,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: "#6a367a",
-    fontSize: 18,
+    fontSize: 16,
     fontWeight: "bold",
   },
 });
